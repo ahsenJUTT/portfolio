@@ -1,0 +1,110 @@
+@import 'utilities.css';
+/* Media Queries: Tablet Landscape */
+@media screen and (max-width: 1060px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}  
+}
+
+/* Media Queries: Tabled Portrait */
+@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+}@media (min-device-width:600px) {
+    img[data-src-600px] {
+        content: attr(data-src-600px, url);
+    }
+}
+
+@media (min-device-width:800px) {
+    img[data-src-800px] {
+        content: attr(data-src-800px, url);
+    }
+}
+
+:root{
+    --blue:#3DCFD3;
+    --black:#161616;
+    --white:#FFFFFF;
+    --light:#898989;
+
+}
+body{
+    font-family: 'poppins', 'sans-serif';
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing:antialiased
+}
+header{
+    background:var(--black);
+    height: 900px;
+    clip-path: polygon(0 0, 100% 0 , 100% 100%,70% 87%,0 100% );
+}
+.container{
+    max-width: 1152px;
+    padding: 0 15px;
+    margin:0 auto; 
+}
+header nav .left a{
+    color: var(--white);
+    text-decoration: none;
+    margin-right: 3rem;
+    text-transform: uppercase;
+    transition: all .3s ease;
+
+}
+header nav .left a:hover{
+    color: var(--blue);
+}
+header nav{
+    padding: 2rem 0;
+}
+header nav .branding{
+    margin: 3rem;
+}
+.hero{
+    padding:3rem o;
+}
+.hero .left img{
+    width: 340px;
+    
+
+}
+.hero .right{color: var(--white);}
+.hero .right h6{
+    font-size: 1rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--white);
+    margin-bottom: 0.5rem;
+}
+.hero .right h1{
+    font-size: 4rem;
+    font-weight: 100;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+.hero .right h1{
+    color: var(--blue);
+}
+.hero .right p{
+    margin-bottom: 2rem;
+    line-height: 1.9;
+}
+.hero .right{
+    padding-left: 2cm;
+} .zero{
+    position: absolute;
+    bottom:15%;
+    left: 38%;
+
+}
+.anchor{
+    text-decoration: none;
+}
+.accor{
+    text-decoration: none;
+    color: var(--blue);
+}
+}
